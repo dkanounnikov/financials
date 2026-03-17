@@ -1,0 +1,4 @@
+This is a prompt to execute. After executing the prompt, you can delete the contents of this file and replace it with the required information. The purpose of this repo will be to build a small local app to load financial statements from the banks' credit cards, etc., and also to produce some outputs in the form of CSV files and other options. We'll develop it as we go along. What I currently have: you see the DGLs, and not all of them are functional; not everything is working. We'll initially focus only on two data streams. These data streams will target and populate two tables:
+- Fact.Account WF Business Checking
+- Fact.Account F&B Business Checking
+The current workflow at a high level I download the CSV files from the banks manually. They land in the Downloads folder on the Mac. From there, you get the file processed by PDI app. All the logic sits in the app, and it's being held in the app's objects. 
