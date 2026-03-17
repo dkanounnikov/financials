@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>bicycle-financials-usa-wf-report-output</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <size_limit_lines/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2024/02/20 17:18:50.316</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2024/02/20 17:18:50.316</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>bicycle_finance local</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>bicycle_finance</database>
+    <port>5432</port>
+    <username>Dmitri</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce1089c5f88d</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5432</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>fact.account_wf_business_checking_load_history</from>
+      <to>Text file output</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Text file output</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>,</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding>UTF-8</encoding>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>N</create_parent_folder>
+    <file>
+      <name>/Users/Dmitri/Desktop/BCL - Monthly WF Report</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>csv</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+      <field>
+        <name>month_transaction</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>date_transaction</name>
+        <type>Timestamp</type>
+        <format>yyyy-MM-dd</format>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>transaction_type</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>category</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>payee</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>transaction_description</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>amount_deposited</name>
+        <type>Number</type>
+        <format>0.#####</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>amount_drawn</name>
+        <type>Number</type>
+        <format>0.#####</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>560</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>fact.account_wf_business_checking_load_history</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>bicycle_finance local</connection>
+    <sql>-- New script in postgres.
+-- Date: Apr 29, 2024
+-- Time: 1:13:55 PM
+-- Created by Dmitri
+-- DBeaver Project Path: /Users/Dmitri/Library/DBeaverData/workspace6/General
+
+-- Monthly Transactions from USA
+
+select 
+	to_char(date_transaction, 'Month')|| ' ' || to_char(date_transaction, 'YYYY') as month_transaction
+,	date_transaction
+,	case when transaction_amount &lt; 0
+		then 'Expenses'
+		else 'Income'
+	end as transaction_type
+,	case 
+		-- Wells Fargo 
+		when 
+			(
+				transaction_description like '%INTEREST PAYMENT%'
+			or	
+				transaction_description like '%WIRE TRANS SVC CHARGE%'
+			or	
+				transaction_description like '%DIRECT PAY%'
+			or	
+				transaction_description like '%RECURRING TRANSFER TO BICYCLE LLC BUSINESS MARKET RATE SAVINGS%'
+			) and transaction_amount > 0
+			then 'Bank Interest'
+		when 
+			(
+				transaction_description like '%INTEREST PAYMENT%'
+			or	
+				transaction_description like '%WIRE TRANS SVC CHARGE%'
+			or	
+				transaction_description like '%DIRECT PAY%'
+			or	
+				transaction_description like '%RECURRING TRANSFER TO BICYCLE LLC BUSINESS MARKET RATE SAVINGS%'
+			) and transaction_amount &lt; 0
+			then 'Bank Charges'
+		-- Cash Withdrawals 
+		when 
+			(
+				transaction_description like '%ATM WITHDRAWAL%'
+			or	
+				transaction_description like '%ATM WITHDRAWAL%'
+			)
+			then 'Cash - Uncategorized'
+		when transaction_description like '%MONTHLY OFFICE CLEANING%'
+			then 'Office Expenses'
+		-- WF Direct Pay
+		when 
+			(	
+				transaction_description like '%WF Direct Pay%'
+			and
+				transaction_amount = -310
+			)
+			then 'Office Expenses'
+		when 
+			(	
+				transaction_description like '%WF Direct Pay%'
+			and
+				transaction_amount = -1937.5
+			)
+			then 'Accounting Services'
+		when 
+			(	
+				transaction_description like '%WF Direct Pay%'
+			and
+				transaction_amount = -310.9
+			)
+			then 'Accounting Services'
+		when 
+			(	
+				transaction_description like '%WF Direct Pay%'
+			and
+				transaction_amount = -1937.5 - 2310
+			)
+			then 'Services'
+		when 			(	
+				transaction_description like '%WF Direct Pay%'
+			and
+				(
+					transaction_amount = -240
+				or
+					transaction_amount = -200
+				or
+					transaction_amount = -160
+				)
+			)
+			then 'Subcontracor'
+		when 
+			(	
+				transaction_description like '%WF Direct Pay%'
+			and
+				transaction_amount = -2310
+			)
+			then 'Sales Services'
+		-- EOF Direct Pay
+		-- Genesys
+		when transaction_description like '%AM COMMUNICATION%'
+			then 'Revenue'
+		when transaction_description like '%Genesys%'
+			then 'Revenue'
+		when transaction_description like '%TEAMWORK%'
+			then 'Software and Subscriptions'
+		when transaction_description like '%TD AUTO FINANCE%'
+			then 'Vehicle Expenses'
+		when transaction_description like '%4096%'
+			then 'TBD'
+		when transaction_description like '% IRS %'
+			then 'Tax Expense'
+		when transaction_description like '%AMZ STORE%'
+			then 'TBD'
+		when transaction_description like '%APPLE.COM%'
+			then 'Software and Subscriptions'
+		when transaction_description like '%IRONWOOD%'
+			then 'Revenue'
+		when transaction_description like '%Pronovos%'
+			then 'Revenue'	
+		when 
+			(
+				transaction_description like '%WAGE PAY%'
+			or
+				transaction_description like '%ADP Tax%'
+			or
+				transaction_description like '%ADP PAY%'
+			)
+			then 'Payroll'
+		when transaction_description like '%VENMO PAYMENT 230225 1025485494505%'
+			then 'Charity'
+		when transaction_description like '%Office in Ballantyne%'
+			then 'Office Expenses'
+		when transaction_description like '%CITI CARD%'
+			then 'TBD'
+		when transaction_description like '%AMAZON%'
+			then 'TBD'
+		when transaction_description like '%Bicycle BI PTY LTD%'
+			then 'Bicycle RSA'
+		when transaction_description like '%IONOS%'
+			then 'Infrastructure'
+		when transaction_description like '%APPLECARD%'
+			then 'TBD'
+		when transaction_description like '%HISCOX%'
+			then 'Insurance'
+		when 			(	
+				transaction_description like '%Wells Fargo Bank EDI PYMNTS%'
+			and
+				transaction_amount > 0
+			)
+			then 'Revenue'
+		when transaction_description like '%Spectrum%'
+			then 'Communications'
+		when transaction_description like '%ATT Payment%'
+			then 'Communications'
+		when 
+			(
+				transaction_description like '%Tidal%'
+			or
+				transaction_description like '%INTERNATIONAL PURCHASE TRANSACTION FEE%'
+			and
+				transaction_amount = -0.19
+			)
+			then 'Software and Subscriptions'
+		when 
+			(
+				lower(transaction_description) like lower('%SYNCHRONY BANK%')
+			and
+				(
+					transaction_description like '%MOROZOVA%'
+				or
+					transaction_description like '%KANOUNN%'
+				)
+			)
+			then 'Health Care'
+		when transaction_description like '%Microsoft%'
+			then 'Software and Subscriptions'
+		when transaction_description like '%AMEDION%'
+			then 'Travel'
+		when transaction_description like '%NC SECRETARY OF FILING%'
+			then 'Business Registration'
+		when transaction_description like '%TESLA%'
+			then 'Vehicle Expenses'
+		when transaction_description like '%ZELLE TO VALLE BRENDA%'
+			then 'Subcontractor'
+		when transaction_description like '%ZELLE TO BRENDA%'
+			then 'Subcontractor'
+		when transaction_description like '%SWEET MANGO%'
+			then 'Subcontractor'
+		when transaction_description like '%MUSESCORE%'
+			then 'Software and Subscriptions'
+		when transaction_description like '%DK LOAN%'
+			then 'Loans'
+		when transaction_description like '%PARALLELS%'
+			then 'Software and Subscriptions'
+		when transaction_description like '%this_is_a_template%'
+			then 'replace_with_the_correct_description'
+		else 'TBD'
+	end as category
+-- Payees
+,	case 
+		-- Wells Fargo 
+		when 
+			(
+				transaction_description like '%INTEREST PAYMENT%'
+			or	
+				transaction_description like '%WIRE TRANS SVC CHARGE%'
+			or	
+				transaction_description like '%DIRECT PAY%'
+			or	
+				transaction_description like '%RECURRING TRANSFER TO BICYCLE LLC BUSINESS MARKET RATE SAVINGS%'
+			)
+			then 'Wells Fargo'
+		-- Cash Withdrawals 
+		when 
+			(
+				transaction_description like '%ATM WITHDRAWAL%'
+			or	
+				transaction_description like '%ATM WITHDRAWAL%'
+			)
+			then 'Cash Withdrawal'
+		when transaction_description like '%MONTHLY OFFICE CLEANING%'
+			then 'Office Cleaning'
+		-- WF Direct Pay
+		when 
+			(	
+				transaction_description like '%WF Direct Pay%'
+			and
+				transaction_amount = -310
+			)
+			then 'Office Cleaning'
+		when 
+			(	
+				transaction_description like '%WF Direct Pay%'
+			and
+				transaction_amount = -1937.5
+			)
+			then 'Bonka Consulting'
+		when 
+			(	
+				transaction_description like '%WF Direct Pay%'
+			and
+				transaction_amount = -310.9
+			)
+			then 'Bonka Consulting'
+		when 
+			(	
+				transaction_description like '%WF Direct Pay%'
+			and
+				transaction_amount = -1937.5 - 2310
+			)
+			then 'Bonka Consulting and Halo AI'
+		when 			(	
+				transaction_description like '%WF Direct Pay%'
+			and
+				(
+					transaction_amount = -240
+				or
+					transaction_amount = -200
+				or
+					transaction_amount = -160
+				)
+			)
+			then 'Natalia Ryzhikova'
+		when 
+			(	
+				transaction_description like '%WF Direct Pay%'
+			and
+				transaction_amount = -2310
+			)
+			then 'Halo AI'
+		-- EOF Direct Pay
+		-- Genesys
+		when transaction_description like '%AM COMMUNICATION%'
+			then 'Genesys'
+		when transaction_description like '%Genesys%'
+			then 'Genesys'
+		when transaction_description like '%TEAMWORK%'
+			then 'Teamwork'
+		when transaction_description like '%TD AUTO FINANCE%'
+			then 'Tesla - TD'
+		when transaction_description like '%4096%'
+			then 'usbank'
+		when transaction_description like '% IRS %'
+			then 'IRS'
+		when transaction_description like '%AMZ STORE%'
+			then 'Amazon'
+		when transaction_description like '%APPLE.COM%'
+			then 'Apple'
+		when transaction_description like '%IRONWOOD%'
+			then 'Ironwood'
+		when transaction_description like '%Pronovos%'
+			then 'Pronovos'	
+		when 
+			(
+				transaction_description like '%WAGE PAY%'
+			or
+				transaction_description like '%ADP Tax%'
+			or
+				transaction_description like '%ADP PAY%'
+			)
+			then 'ADP - Payroll'
+		when transaction_description like '%VENMO PAYMENT 230225 1025485494505%'
+			then 'Charity'
+		when transaction_description like '%Office in Ballantyne%'
+			then 'Office in Ballantyne'
+		when transaction_description like '%CITI CARD%'
+			then 'Citi'
+		when transaction_description like '%AMAZON%'
+			then 'Amazon'
+		when transaction_description like '%Bicycle BI PTY LTD%'
+			then 'Bicycle RSA'
+		when transaction_description like '%IONOS%'
+			then 'Ionos'
+		when transaction_description like '%APPLECARD%'
+			then 'Apple Card'
+		when transaction_description like '%HISCOX%'
+			then 'Hiscox Insurance'
+		when 			(	
+				transaction_description like '%Wells Fargo Bank EDI PYMNTS%'
+			and
+				transaction_amount > 0
+			)
+			then 'Octapharma'
+		when transaction_description like '%Spectrum%'
+			then 'Spectrum'
+		when transaction_description like '%ATT Payment%'
+			then 'AT&amp;T'
+		when 
+			(
+				transaction_description like '%Tidal%'
+			or
+				transaction_description like '%INTERNATIONAL PURCHASE TRANSACTION FEE%'
+			and
+				transaction_amount = -0.19
+			)
+			then 'Tidal'
+		when 
+			(
+				lower(transaction_description) like lower('%SYNCHRONY BANK%')
+			and
+				(
+					transaction_description like '%MOROZOVA%'
+				or
+					transaction_description like '%KANOUNN%'
+				)
+			)
+			then 'CareCredit'
+		when transaction_description like '%Microsoft%'
+			then 'Microsoft'
+		when transaction_description like '%AMEDION%'
+			then 'Amedion Group - Travel'
+		when transaction_description like '%NC SECRETARY OF FILING%'
+			then 'NC Secretary of Filing'
+		when transaction_description like '%TESLA%'
+			then 'Tesla'
+		when transaction_description like '%ZELLE TO VALLE BRENDA%'
+			then 'Brenda Valle'
+		when transaction_description like '%ZELLE TO BRENDA%'
+			then 'Brenda Valle'
+		when transaction_description like '%MUSESCORE%'
+			then 'MuseScore'
+		when transaction_description like '%DK LOAN%'
+			then 'DK'
+		when transaction_description like '%PARALLELS%'
+			then 'Parallels'
+		when transaction_description like '%SWEET MANGO%'
+			then 'Sweet Mango'
+		when transaction_description like '%this_is_a_template%'
+			then 'replace_with_the_correct_description'
+		else 'TBD'
+	end as payee
+,	transaction_description
+,	amount_deposited
+,	amount_drawn
+--,	transaction_amount
+--,	check_number
+from 
+	fact.account_wf_business_checking_load_history
+where
+	date_transaction >= now()::date - 45 --'2024-01-01'
+order by date_transaction
+	
+	</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>month_transaction</name>
+        <length>2147483647</length>
+        <precision>-1</precision>
+        <origin>fact.account_wf_business_checking_load_history</origin>
+        <comments>month_transaction</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>America/New_York</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Timestamp</type>
+        <storagetype>normal</storagetype>
+        <name>date_transaction</name>
+        <length>6</length>
+        <precision>-1</precision>
+        <origin>fact.account_wf_business_checking_load_history</origin>
+        <comments>date_transaction</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>America/New_York</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>transaction_type</name>
+        <length>2147483647</length>
+        <precision>-1</precision>
+        <origin>fact.account_wf_business_checking_load_history</origin>
+        <comments>transaction_type</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>America/New_York</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>category</name>
+        <length>2147483647</length>
+        <precision>-1</precision>
+        <origin>fact.account_wf_business_checking_load_history</origin>
+        <comments>category</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>America/New_York</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>payee</name>
+        <length>2147483647</length>
+        <precision>-1</precision>
+        <origin>fact.account_wf_business_checking_load_history</origin>
+        <comments>payee</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>America/New_York</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>transaction_description</name>
+        <length>2147483647</length>
+        <precision>-1</precision>
+        <origin>fact.account_wf_business_checking_load_history</origin>
+        <comments>transaction_description</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>America/New_York</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Number</type>
+        <storagetype>normal</storagetype>
+        <name>amount_deposited</name>
+        <length>14</length>
+        <precision>2</precision>
+        <origin>fact.account_wf_business_checking_load_history</origin>
+        <comments>amount_deposited</comments>
+        <conversion_Mask>####0.0#########;-####0.0#########</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>America/New_York</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>Number</type>
+        <storagetype>normal</storagetype>
+        <name>amount_drawn</name>
+        <length>14</length>
+        <precision>2</precision>
+        <origin>fact.account_wf_business_checking_load_history</origin>
+        <comments>amount_drawn</comments>
+        <conversion_Mask>####0.0#########;-####0.0#########</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>America/New_York</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>176</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+  <attributes/>
+</transformation>

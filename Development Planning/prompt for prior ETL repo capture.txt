@@ -1,0 +1,144 @@
+Use this repo as a reference-extraction exercise for a different local financial ETL project.
+
+Your job is not to build new code in this repo. Your job is to inspect this repo, understand how the ETL solution was structured, and write a handoff document that captures the reusable approach, patterns, and implementation decisions so that another repo can reuse them instead of reinventing them.
+
+Context for why this is needed:
+
+- I am building a new local financial loading app in a different repo.
+- That new app will load bank / credit card statement files from my Mac into local Postgres.
+- It will likely use Python plus shell wrappers.
+- I want to reuse the best ideas, structure, conventions, and implementation approach from this ETL repo where appropriate.
+- I do not want a vague summary. I want a concrete engineering handoff document.
+
+What to do:
+
+1. Inspect the repo structure and identify the main ETL architecture.
+2. Determine the end-to-end execution model:
+   - entry points
+   - orchestration
+   - source ingestion
+   - staging / transformation flow
+   - target loading
+   - export/output generation
+3. Identify the project layout and explain why it was organized that way.
+4. Identify reusable patterns that would matter in a new local ETL repo.
+5. Separate general reusable patterns from client-specific logic that should not be copied blindly.
+6. Produce a structured markdown document in this repo named:
+   `ETL repo reference capture.md`
+
+The document you write must contain these sections:
+
+## 1. Repo Purpose
+
+- What this ETL repo appears to do
+- What kind of data flow / product shape it represents
+
+## 2. Top-Level Structure
+
+- Important folders and files
+- What each major area is responsible for
+- Which entry points appear to matter most
+
+## 3. Execution Model
+
+- How a run starts
+- How files are discovered or received
+- How transformations are organized
+- How data is loaded
+- How outputs are generated
+- How the workflow is triggered locally or in automation
+
+## 4. Reusable Design Patterns
+
+- Folder structure patterns worth reusing
+- Python patterns worth reusing
+- Shell / CLI patterns worth reusing
+- Config patterns worth reusing
+- SQL / database interaction patterns worth reusing
+- Logging, validation, idempotency, and error-handling patterns worth reusing
+
+## 5. Database And Load Strategy
+
+- How this repo handles raw/staging/target layers
+- Whether it uses direct loads, staging tables, intermediate files, or multiple phases
+- What seems worth reusing for a small local Postgres-based financial loader
+- What seems unnecessarily heavy for the new repo
+
+## 6. File Handling Strategy
+
+- How source files are named, discovered, archived, or tracked
+- Any duplicate protection or rerun safety patterns
+- Any file manifest / control-table / metadata-table approach
+
+## 7. Configuration Strategy
+
+- How environment variables, YAML/JSON/TOML/config modules, or constants are handled
+- What is hard-coded vs configurable
+- What should be externalized in the new repo
+
+## 8. Quality And Operability
+
+- Testing approach
+- Local developer workflow
+- Dependency management
+- Observability / logging
+- Failure handling
+- Recovery and rerun strategy
+
+## 9. Concrete Assets To Reuse
+
+- List specific files, modules, scripts, or patterns that would be worth copying or adapting
+- For each one, explain why it is useful
+- Include file references where possible
+
+## 10. Things Not To Copy Blindly
+
+- Client-specific assumptions
+- Overengineered pieces
+- Legacy patterns
+- Anything that would slow down or complicate a small local financial ETL app
+
+## 11. Recommended Adaptation For The New Financials Repo
+
+Give a practical recommendation for how to adapt this repo’s approach to a new repo with this shape:
+
+- local Mac execution
+- Python-based loaders
+- thin shell wrappers
+- local Postgres target
+- source files manually downloaded into `~/Downloads`
+- initial focus on a small number of bank statement file types
+- CSV exports for accountant / spreadsheet workflows
+
+Be specific. Explain:
+
+- what to reuse directly
+- what to simplify
+- what to redesign
+- what to defer until later
+
+## 12. Suggested Starter Blueprint
+
+End with a proposed starter structure for the new repo, including:
+
+- recommended top-level folders
+- recommended runtime flow
+- recommended config approach
+- recommended first implementation slice
+
+Important constraints:
+
+- Do not modify application code unless absolutely necessary for the document task.
+- Prefer reading and synthesizing over making changes.
+- Be concrete and specific, not generic.
+- Include file references where helpful.
+- Call out assumptions clearly.
+- If something is unclear in the repo, say so explicitly instead of guessing.
+
+Final instruction:
+
+After you finish the analysis, write the full handoff into:
+
+`ETL repo reference capture.md`
+
+That file should be clean enough that I can copy it into my new financials repo and use it as working reference material.
