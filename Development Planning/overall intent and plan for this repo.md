@@ -1,5 +1,16 @@
 # Financials Repo: Working Intent And Initial Plan
 
+## Working Memory Files
+
+Supporting files for ongoing work in this repo:
+
+- [`Project inbox.md`](/Users/Dmitri/GIT-Repos/financials/Development%20Planning/Project%20inbox.md)
+- [`Decisions log.md`](/Users/Dmitri/GIT-Repos/financials/Development%20Planning/Decisions%20log.md)
+- [`Implementation working notes.md`](/Users/Dmitri/GIT-Repos/financials/Development%20Planning/Implementation%20working%20notes.md)
+- [`ETL reference notes.md`](/Users/Dmitri/GIT-Repos/financials/Development%20Planning/ETL%20reference%20notes.md)
+- [`Restart notes.md`](/Users/Dmitri/GIT-Repos/financials/Development%20Planning/Restart%20notes.md)
+- [`Process - project workflow.md`](/Users/Dmitri/GIT-Repos/financials/Development%20Planning/Process%20-%20project%20workflow.md)
+
 ## Purpose
 
 This repo will become a small local application for loading financial statement files from banks and credit cards into a local Postgres database, then producing downstream outputs such as CSV files for spreadsheet/accounting workflows.
